@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="calculator">
+        <div class="screen color-screen">hello</div>
+
+        <div class="row">
+          <button class="btn brown-btn ac-btn" >AC</button>
+          <button class="btn brown-btn delete-btn">Del</button>
+          <button class="btn yellow-btn">.</button>
+          <button class="btn yellow-btn ">\</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn yellow-btn ">*</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">4</button>
+          <button class="btn" onclick="fetch(5)">5</button>
+          <button class="btn">6</button>
+          <button class="btn yellow-btn">-</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="fetch(1)">1</button>
+          <button class="btn" onclick="fetch(2)">2</button>
+          <button class="btn">3</button>
+          <button class="btn yellow-btn">+</button>
+        </div>
+
+        <div class="row">
+          <button class="btn color-screen">00</button>
+          <button class="btn color-screen">0</button>
+          <button class="btn" id="equal-btn" onclick="sum()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
